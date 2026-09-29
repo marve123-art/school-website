@@ -1,0 +1,6 @@
+# Video files
+*.mp4
+
+# Windows system files
+Thumbs.db
+desktop.ini
