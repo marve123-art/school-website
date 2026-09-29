@@ -923,7 +923,13 @@ ul {
 }
 
 
-
+body {
+    background-image:url("photo 13.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed
+    ;
+}
 
 
 /* ========== VIDEO SECTION ========== */
