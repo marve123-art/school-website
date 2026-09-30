@@ -206,7 +206,7 @@ ul {
 
 /* ========== ABOUT ========== */
 .about {
-     background: rgba(173, 216, 230,0.3);
+     background: rgba(173, 216, 230,0.6);
     color: rgb(255, 255, 255);
 }
 
@@ -325,7 +325,7 @@ ul {
 
 /* ========== ADMISSIONS ========== */
 .admissions {
-     background: rgba(173, 216, 230, 0.3);
+     background: rgba(173, 216, 230, 0.6);
     color: rgb(255, 255, 255);
     text-align: center;
     padding: 90px 0;
@@ -359,7 +359,7 @@ ul {
 
 /* ========== CONTACT ========== */
  .contact{
-     background: rgba(173, 216, 230,0.3);
+     background: rgba(173, 216, 230,0.6);
     color: rgb(255, 255, 255);
 }
 
@@ -445,7 +445,7 @@ ul {
     position: absolute;
     bottom: 70px;
     right: 0;
-    background: white;
+    background: rgb(255, 255, 255);
     border-radius: 12px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
     width: 230px;
@@ -477,7 +477,7 @@ ul {
 }
 
 .whatsapp-contact:hover {
-    background-color: #f0fdf4;
+    background-color: rgb(255,255,255);
 }
 
 .contact-name {
