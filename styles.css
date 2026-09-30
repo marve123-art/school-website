@@ -414,42 +414,90 @@ ul {
     align-self: flex-start;
     margin-top: 8px;
 }
-
-/* ========== FLOATING WHATSAPP BUTTON ========== */
-.whatsapp-float {
+/* ========== MULTI WHATSAPP BUTTON ========== */
+.whatsapp-container {
     position: fixed;
     bottom: 28px;
     right: 28px;
+    z-index: 9999;
+}
+
+.whatsapp-float {
     width: 58px;
     height: 58px;
     background-color: #25D366;
-    color: white;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
-    z-index: 9999;
+    border: none;
+    cursor: pointer;
     transition: all 0.3s ease;
-    text-decoration: none;
 }
 
 .whatsapp-float:hover {
     background-color: #20ba5a;
     transform: scale(1.08);
-    box-shadow: 0 8px 25px rgba(37, 211, 102, 0.5);
 }
 
-.whatsapp-float svg {
-    width: 28px;
-    height: 28px;
+.whatsapp-popup {
+    position: absolute;
+    bottom: 70px;
+    right: 0;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    width: 230px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+    overflow: hidden;
 }
 
-/* Mobile adjustment */
+.whatsapp-popup.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.whatsapp-contact {
+    display: flex;
+    flex-direction: column;
+    padding: 14px 18px;
+    text-decoration: none;
+    color: #1f2937;
+    border-bottom: 1px solid #f1f5f9;
+    transition: background 0.2s;
+}
+
+.whatsapp-contact:last-child {
+    border-bottom: none;
+}
+
+.whatsapp-contact:hover {
+    background-color: #f0fdf4;
+}
+
+.contact-name {
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #111827;
+}
+
+.contact-number {
+    font-size: 0.85rem;
+    color: #6b7280;
+    margin-top: 2px;
+}
+
 @media (max-width: 480px) {
-    .whatsapp-float {
+    .whatsapp-container {
         bottom: 20px;
         right: 20px;
+    }
+    .whatsapp-float {
         width: 52px;
         height: 52px;
     }

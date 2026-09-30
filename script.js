@@ -38,3 +38,20 @@ window.addEventListener('scroll', () => {
         header.classList.remove('scrolled');
     }
 });
+
+
+    const whatsappBtn = document.getElementById('whatsappBtn');
+    const whatsappPopup = document.getElementById('whatsappPopup');
+
+    whatsappBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        whatsappPopup.classList.toggle('active');
+    });
+
+    // Close when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!whatsappBtn.contains(e.target) && !whatsappPopup.contains(e.target)) {
+            whatsappPopup.classList.remove('active');
+        }
+    });
+    
