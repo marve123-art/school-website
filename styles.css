@@ -271,11 +271,6 @@ ul {
 
 
 /* ========== WHY CHOOSE US ========== */
-.why-us {
-    
-}
-
-
 .features-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -307,9 +302,20 @@ ul {
     font-size: 0.95rem;
 }
 
+/* ========== RESPONSIVE FOR FEATURES ========== */
+@media (max-width: 992px) {
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* ========== FACILITIES ========== */
-
-
 .facilities-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -320,8 +326,8 @@ ul {
     background: var(--white);
     padding: 32px 26px;
     border-radius: 14px;
+    transition: transform 0.25s ease;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
-    transition: transform 0.25s;
 }
 
 .facility-item:hover {
@@ -337,6 +343,19 @@ ul {
 .facility-item p {
     color: var(--gray);
     font-size: 0.95rem;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .facilities-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .facilities-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* ========== ADMISSIONS ========== */
@@ -665,7 +684,7 @@ ul {
     background-image: url("images/school-logo.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 500px;
+    background-size: 200px;
 
     opacity: 0.06;
     z-index: 0;
