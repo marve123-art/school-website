@@ -387,7 +387,6 @@ ul {
     transform: translateY(-2px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
-
 /* ========== CONTACT ========== */
  .contact{
      background: rgba(173, 216, 230,0.5);
@@ -444,6 +443,50 @@ ul {
 .contact-form button {
     align-self: flex-start;
     margin-top: 8px;
+}
+
+/* ===== Mobile Fix (Phone) ===== */
+@media (max-width: 768px) {
+
+  .contact-wrapper {
+    flex-direction: column;
+    padding: 16px;
+  }
+
+  .contact-info,
+  .form-card {
+    width: 100%;
+    flex: 1 1 100%;
+  }
+
+  .contact-info p {
+    word-break: break-word;
+  }
+
+  .form-card input,
+  .form-card textarea {
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+
+  .btn-send {
+    width: 100%;
+  }
+
+  /* Header / Navigation */
+  .header {
+    padding: 14px 16px;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+    gap: 10px 14px;
+  }
+
+  .nav a {
+    font-size: 0.9rem;
+  }
 }
 /* ========== MULTI WHATSAPP BUTTON ========== */
 .whatsapp-container {
