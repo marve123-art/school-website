@@ -140,7 +140,7 @@ ul {
 
 /* ========== HERO ========== */
 .hero {
-    background: rgba(173, 216, 230, 0.3);
+    background: rgba(114, 47, 55, 0.3);
      padding: 130px 0 120px;
     text-align: center;
     
@@ -222,8 +222,7 @@ ul {
 
 /* ========== ABOUT ========== */
 .about {
-     background: rgba(173, 216, 230, 0.3);
-    color: rgb(255, 255, 255);
+     background: rgba(173, 216, 230,0.5);
 }
 
 .about-content {
@@ -237,7 +236,7 @@ ul {
 .about-text p {
     margin-bottom: 20px;
     font-size: 1.05rem;
-    color: rgb(255,255,255);
+    color: rgb(45, 45, 45);
 }
 
 .about-text strong {
@@ -265,16 +264,12 @@ ul {
 }
 
 .stat p {
-    color: var(--gray);
+    color:var(--gray);
     font-size: 0.95rem;
 }
 
 
 /* ========== WHY CHOOSE US ========== */
-.why-us {
-    /* you can leave this empty or add background if needed */
-}
-
 .features-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -353,7 +348,7 @@ ul {
 
 /* ========== ADMISSIONS ========== */
 .admissions {
-     background: rgba(173, 216, 230, 0.6);
+     background: rgba(173, 216, 230,0.3);
     color: rgb(255, 255, 255);
     text-align: center;
     padding: 90px 0;
@@ -395,7 +390,7 @@ ul {
 
 /* ========== CONTACT ========== */
  .contact{
-     background: rgba(173, 216, 230,0.6);
+     background: rgba(173, 216, 230,0.5);
     color: rgb(255, 255, 255);
 }
 
@@ -403,7 +398,7 @@ ul {
     display: grid;
     grid-template-columns: 1fr 1.4fr;
     gap: 60px;
-    color: rgb(255, 255, 255);
+    color: rgb(255, 255,255);
 }
 
 .contact-item {
@@ -419,7 +414,7 @@ ul {
 
 .contact-item p {
     
-    color: rgb(255, 255, 255);
+    color: rgb(255,255,255);
 }
 
 .contact-form {
