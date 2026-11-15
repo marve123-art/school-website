@@ -216,7 +216,7 @@ ul {
 }
 
 .section-subtitle {
-    color: var(--gray);
+    color: rgb(45,45,45);
     font-size: 1.1rem;
 }
 
@@ -349,7 +349,7 @@ ul {
 /* ========== ADMISSIONS ========== */
 .admissions {
      background: rgba(173, 216, 230,0.3);
-    color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255); 
     text-align: center;
     padding: 90px 0;
 
@@ -375,6 +375,7 @@ ul {
     margin: 0 auto 32px;
     font-size: 1.15rem;
     opacity: 0.92;
+    color: rgb(45, 45, 45);
 }
 
 .admissions .btn-primary {
@@ -397,7 +398,7 @@ ul {
     display: grid;
     grid-template-columns: 1fr 1.4fr;
     gap: 60px;
-    color: rgb(255, 255,255);
+    color: rgb(45, 45,45);
 }
 
 .contact-item {
@@ -413,7 +414,7 @@ ul {
 
 .contact-item p {
     
-    color: rgb(255,255,255);
+    color: rgb(45,45,45);
 }
 
 .contact-form {
@@ -1039,3 +1040,596 @@ body {
     display: block;
     aspect-ratio: 40/40;
 }
+
+/* =========================================
+   FULL RESPONSIVE - WORKS ON ALL DEVICES
+   ========================================= */
+
+/* ===== TABLET (iPad & medium screens) ===== */
+@media (max-width: 992px) {
+  .features-grid,
+  .facilities-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .programs-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .about-content,
+  .contact-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .management-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .hero-content h2 {
+    font-size: 2.4rem;
+  }
+}
+
+/* ===== PHONE (most smartphones) ===== */
+@media (max-width: 768px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .container {
+    width: 92%;
+  }
+
+  /* Header */
+  .logo-img {
+    height: 55px;
+  }
+
+  .header {
+    padding: 10px 0;
+  }
+
+  /* Hero */
+  .hero {
+    padding: 90px 0 70px;
+  }
+
+  .hero-content h2 {
+    font-size: 1.9rem;
+    line-height: 1.3;
+  }
+
+  .hero .motto {
+    font-size: 1.1rem;
+  }
+
+  .hero .description {
+    font-size: 1rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+  }
+
+  /* Section titles */
+  .section-title,
+  .admissions-content h2,
+  .management-heading h1 {
+    font-size: 1.8rem;
+  }
+
+  /* Force all grids to 1 column */
+  .features-grid,
+  .programs-grid,
+  .facilities-grid,
+  .gallery-grid,
+  .management-container {
+    grid-template-columns: 1fr !important;
+    gap: 20px;
+  }
+
+  /* Contact section - fixed properly */
+  .contact-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .contact-item,
+  .contact-form {
+    width: 100%;
+  }
+
+  .contact-item p,
+  .contact-item h3 {
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 16px; /* prevents zoom on iPhone */
+  }
+
+  .contact-form button {
+    width: 100%;
+  }
+
+  /* Make text readable over background */
+  .contact-item,
+  .admissions-content,
+  .about-text,
+  .feature-card,
+  .facility-item,
+  .program-card {
+    background: rgba(255, 255, 255, 0.93);
+    padding: 18px;
+    border-radius: 12px;
+  }
+/*school management */
+ person-image {
+    height: 270px;
+ }
+  
+
+  /* Footer */
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 25px;
+  }
+
+  .footer-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+}
+
+/* ===== VERY SMALL PHONES ===== */
+@media (max-width: 480px) {
+  .hero-content h2 {
+    font-size: 1.7rem;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  .management-heading h1 {
+    font-size: 1.7rem;
+  }
+
+  .person-image {
+    height: 240px;
+  }
+}
+
+
+
+
+/* =========================================
+   CLEAN CARD STYLE - WORKS ON ALL DEVICES
+   ========================================= */
+
+/* Make text cards look good everywhere */
+.feature-card,
+.facility-item,
+.program-card,
+.contact-item,
+.admissions-content,
+.about-text{
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 14px;
+  padding: 22px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* ===== TABLET ===== */
+@media (max-width: 992px) {
+  .features-grid,
+  .facilities-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .programs-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .about-content,
+  .contact-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .management-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ===== PHONE ===== */
+@media (max-width: 768px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .container {
+    width: 92%;
+  }
+
+  /* Header */
+  .logo-img {
+    height: 52px;
+  }
+
+  /* Hero */
+  .hero {
+    padding: 85px 0 65px;
+  }
+
+  .hero-content h2 {
+    font-size: 1.85rem;
+    line-height: 1.3;
+  }
+
+  .hero .motto {
+    font-size: 1.05rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+  }
+
+  /* All grids become 1 column */
+  .features-grid,
+  .programs-grid,
+  .facilities-grid,
+  .gallery-grid,
+  .management-container {
+    grid-template-columns: 1fr !important;
+    gap: 18px;
+  }
+
+  /* Contact section - clean stack */
+  .contact-content {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .contact-item,
+  .contact-form {
+    width: 100%;
+  }
+
+  .contact-item h3 {
+    color: #6B3FA0;
+    margin-bottom: 8px;
+  }
+
+  .contact-item p {
+    word-break: break-word;
+    line-height: 1.5;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+    padding: 14px;
+  }
+
+  .contact-form button {
+    width: 100%;
+    padding: 14px;
+  }
+
+  
+  
+  
+
+  /* Footer */
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .footer-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+}
+
+/* ===== VERY SMALL PHONES ===== */
+@media (max-width: 480px) {
+  .hero-content h2 {
+    font-size: 1.65rem;
+  }
+
+  .section-title {
+    font-size: 1.55rem;
+  }
+
+  .person-image {
+    height: 230px;
+  }
+}
+
+
+
+/* Academic Programmes Styles */
+.academic-section {
+  padding: 80px 20px;
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+}
+
+.academic-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #c026d3; /* Purple like your other headings */
+  text-shadow: 
+    -2px -2px 0 #fff,
+     2px -2px 0 #fff,
+    -2px  2px 0 #fff,
+     2px  2px 0 #fff;
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: #fff;
+  font-size: 1.15rem;
+  margin-bottom: 50px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.programmes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.programme-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 28px 24px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+  transition: transform 0.3s ease;
+}
+
+.programme-card:hover {
+  transform: translateY(-6px);
+}
+
+.programme-card h3 {
+  color: #1e3a8a; /* Dark blue */
+  font-size: 1.4rem;
+  margin-bottom: 18px;
+  font-weight: 700;
+  border-bottom: 2px solid #e0e7ff;
+  padding-bottom: 10px;
+}
+
+.programme-item {
+  margin-bottom: 18px;
+}
+
+.programme-item:last-child {
+  margin-bottom: 0;
+}
+
+.programme-item h4 {
+  color: #1e40af;
+  font-size: 1.05rem;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.programme-item h4 span {
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: #64748b;
+}
+
+.programme-item p {
+  color: #475569;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  margin: 0;
+}
+
+.approach-box {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 32px 35px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.approach-box h3 {
+  color: #1e3a8a;
+  font-size: 1.5rem;
+  margin-bottom: 18px;
+  text-align: center;
+}
+
+.approach-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 12px 30px;
+}
+
+.approach-box li {
+  position: relative;
+  padding-left: 28px;
+  color: #334155;
+  font-size: 1rem;
+}
+
+.approach-box li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #7c3aed;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2.2rem;
+  }
+  
+  .programmes-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* Admission Process Styles */
+.admission-section {
+  padding: 80px 20px;
+  background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+}
+
+.admission-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin-bottom: 50px;
+}
+
+.step-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 28px 24px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.step-card:hover {
+  transform: translateY(-6px);
+}
+
+.step-number {
+  width: 42px;
+  height: 42px;
+  background: #7c3aed;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 700;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.step-card h3 {
+  color: #1e3a8a;
+  font-size: 1.25rem;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.step-card p {
+  color: #475569;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  margin: 0 0 10px 0;
+}
+
+.step-card ul {
+  margin: 8px 0 0 0;
+  padding-left: 18px;
+  color: #475569;
+  font-size: 0.92rem;
+}
+
+.step-card ul li {
+  margin-bottom: 4px;
+}
+
+.admission-note {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.admission-note p {
+  color: #334155;
+  font-size: 1.05rem;
+  margin-bottom: 20px;
+}
+
+.btn-primary {
+  display: inline-block;
+  background: #1e40af;
+  color: white;
+  padding: 12px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: #1e3a8a;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .steps-grid {
+    grid-template-columns: 1fr;
+  }
+}
+#faqBtn{position:fixed;bottom:20px;left:20px;background:#0f172a;color:#fff;width:60px;height:60px;border-radius:50%;display:grid;place-items:center;font-size:28px;cursor:pointer;z-index:9999;box-shadow:0 4px 15px rgba(0,0,0,.3)}
+#faqBox{display:none;position:fixed;bottom:90px;left:20px;width:340px;max-width:90%;background:#fff;border-radius:16px;box-shadow:0 10px 30px rgba(0,0,0,.2);z-index:9999;overflow:hidden}
+#faqHead{background:#0f172a;color:#fff;padding:15px;font-weight:bold;display:flex;justify-content:space-between}
+.faqItem{border-bottom:1px solid #eee}
+.faqQ{padding:12px 15px;font-weight:600;cursor:pointer;display:flex;justify-content:space-between}
+.faqA{display:none;padding:10px 15px;font-size:14px;color:#555;background:#f9fafb}
+.faqItem.open .faqA{display:block}

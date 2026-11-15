@@ -59,3 +59,8 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
+function toggleFaq(){
+ var box=document.getElementById('faqBox');
+ box.style.display = box.style.display==='block' ? 'none' : 'block';
+}
